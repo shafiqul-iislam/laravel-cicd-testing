@@ -8,7 +8,9 @@ Route::get('/', function () {
 
 
 Route::get('/home', function () {
-   $hello = '<h1>hello cicd world</h1>';
+   $hello = '<h1>I am testing CI/CD with Laravel</h1>';
+
+
 
    return $hello;
 });
