@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /var/www/html/laravel-cicd-app
+            cd /var/www/html/
             git pull origin main
             composer install --no-dev --optimize-autoloader
             php artisan migrate --force
